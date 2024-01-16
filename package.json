@@ -20,7 +20,7 @@
     "fix": "run-s fix:*",
     "fix:eslint": "eslint --config eslint.config.js --fix",
     "fix:prettier": "prettier --write .",
-    "dryrun": "lerna version --dry-run --conventional-commits --create-release github --yes --no-private",
+    "dryrun": "lerna publish --dry-run --conventional-commits --create-release github --yes --no-private",
     "dryrun:major": "npm run dryrun -- major",
     "dryrun:minor": "npm run dryrun -- minor",
     "dryrun:patch": "npm run dryrun -- patch"

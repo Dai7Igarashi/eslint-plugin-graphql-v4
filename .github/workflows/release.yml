@@ -81,4 +81,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Create Pull Request
         run: |
-          gh pr create --base main --head ${{ steps.extract_branch.outputs.branch_name }} --title "Release" --body "publish to github packages!"
+          gh pr create --base main --head "${{ steps.extract_branch.outputs.branch_name }}" --title "Release" --body "publish to github packages!"
